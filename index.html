@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Математика вокруг нас</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Фоновые математические элементы -->
+    <div class="math-bg">
+        <span>π</span>
+        <span>∑</span>
+        <span>√x</span>
+        <span>∞</span>
+        <span>f(x)</span>
+        <span>φ</span>
+        <span>∫</span>
+    </div>
+
+    <main>
+
+        <!-- Заголовок -->
+        <header class="hero">
+
+            <div class="badge">
+                ПРОЕКТНАЯ РАБОТА • ИНФОРМАТИКА
+            </div>
+
+            <h1>
+                Математика<br>
+                <span>вокруг нас</span>
+            </h1>
+
+            <p>
+                От природы до современных технологий
+            </p>
+
+        </header>
+
+
+        <!-- Видео -->
+        <section class="video-section">
+
+            <div class="video-container">
+
+                <video
+                    id="video"
+                    preload="metadata"
+                    playsinline
+                >
+
+                    <source
+                        src="video/video_2026-10-07_21-44-29.mp4"
+                        type="video/mp4"
+                    >
+
+                    <track
+                        id="subtitles"
+                        src="subtitles/ru.vtt"
+                        kind="subtitles"
+                        srclang="ru"
+                        label="Русские субтитры"
+                        default
+                    >
+
+                    Ваш браузер не поддерживает видео.
+                </video>
+
+
+                <!-- Затемнение при паузе -->
+                <div class="video-overlay" id="videoOverlay">
+                    <button id="bigPlay" class="big-play">
+                        ▶
+                    </button>
+                </div>
+
+
+                <!-- Панель управления -->
+                <div class="controls">
+
+                    <!-- Progress -->
+                    <div class="progress-container">
+                        <input
+                            type="range"
+                            id="progress"
+                            min="0"
+                            max="100"
+                            value="0"
+                        >
+                    </div>
+
+
+                    <div class="control-row">
+
+                        <div class="controls-left">
+
+                            <button id="playBtn" title="Воспроизвести">
+                                ▶
+                            </button>
+
+                            <button id="backBtn" title="Назад 10 секунд">
+                                ↶
+                            </button>
+
+                            <button id="forwardBtn" title="Вперёд 10 секунд">
+                                ↷
+                            </button>
+
+                            <div class="volume-wrapper">
+
+                                <button id="muteBtn">
+                                    🔊
+                                </button>
+
+                                <input
+                                    type="range"
+                                    id="volume"
+                                    min="0"
+                                    max="1"
+                                    step="0.01"
+                                    value="1"
+                                >
+
+                            </div>
+
+                            <span id="time">
+                                00:00 / 00:00
+                            </span>
+
+                        </div>
+
+
+                        <div class="controls-right">
+
+                            <button id="subtitleBtn" title="Субтитры">
+                                CC
+                            </button>
+
+                            <button id="fullscreenBtn" title="Полный экран">
+                                ⛶
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Информация -->
+        <section class="about">
+
+            <div class="section-title">
+                <span>01</span>
+                <h2>О проекте</h2>
+            </div>
+
+            <p>
+                Математика окружает нас повсюду. Она проявляется
+                в закономерностях природы, архитектуре, технологиях,
+                компьютерных системах и искусственном интеллекте.
+            </p>
+
+            <p>
+                В этом проекте мы рассмотрим, как математические
+                закономерности сопровождают человека — от простых
+                природных форм до сложнейших современных технологий.
+            </p>
+
+        </section>
+
+
+        <!-- Направления -->
+        <section class="topics">
+
+            <div class="section-title">
+                <span>02</span>
+                <h2>Математика повсюду</h2>
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">🌿</div>
+                    <h3>Природа</h3>
+                    <p>
+                        Симметрия, спирали, числа Фибоначчи
+                        и золотое сечение.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">🏛️</div>
+                    <h3>Архитектура</h3>
+                    <p>
+                        Геометрия, пропорции и расчёты
+                        конструкций.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">💻</div>
+                    <h3>Компьютеры</h3>
+                    <p>
+                        Алгоритмы, числа, координаты,
+                        графика и кодирование.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🤖</div>
+                    <h3>Искусственный интеллект</h3>
+                    <p>
+                        Матрицы, вероятности, статистика
+                        и математические модели.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Финал -->
+        <section class="quote">
+
+            <div class="quote-symbol">“</div>
+
+            <h2>
+                Математика — это не просто<br>
+                школьный предмет.
+            </h2>
+
+            <p>
+                Это язык, с помощью которого мы можем
+                описывать окружающий нас мир.
+            </p>
+
+        </section>
+
+
+        <footer>
+
+            <div>
+                <strong>Математика вокруг нас</strong>
+                <span>Проектная работа по информатике</span>
+            </div>
+
+            <div>
+                2026
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
